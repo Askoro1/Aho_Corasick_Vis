@@ -1,0 +1,64 @@
+.text_field {
+  position: absolute;
+  padding: 15px 0 0;
+  width: 50%;
+}
+
+.field {
+  font-family: inherit;
+  width: 50%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  border-image: linear-gradient(to right, #5e5d5d, #9b9b9b);
+  border-image-slice: 1;
+  outline: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(150, 150, 150);
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.field::placeholder {
+  color: transparent;
+}
+
+.field:placeholder-shown ~ .label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  font-weight: 550;
+  color: #9b9b9b;
+}
+
+.field:focus ~ .label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+}
+
+/* reset input */
+.field:required, .field:invalid {
+  box-shadow: none;
+}
+
+#text_input {
+  top: 20px;
+  left: 60px;
+}
+
+#pattern_input {
+  top: 20px;
+  left: 460px;
+  width: 35%;
+}

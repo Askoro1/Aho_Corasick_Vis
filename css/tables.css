@@ -1,0 +1,39 @@
+.info_legend {
+  width: 320px;
+  min-height: 40px;
+  position: absolute;
+  border: 2px solid #9b9b9b;
+  top: 150px;
+  right: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.info_legend_cell {
+  position: relative;
+  display: table-row;
+  padding: 50px;
+  height: 40px;
+}
+.info_label {
+  font-family: inherit;
+  font-weight: lighter;
+  color: #5e5d5d;
+  top: 10px;
+  padding-left: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.info_square {
+  alignment: right;
+  width: 15px;
+  height: 15px;
+  top: 10px;
+  left: 5px;
+  border: 2px solid #9b9b9b;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
