@@ -1,36 +1,67 @@
-.info_legend {
-  width: 320px;
-  min-height: 40px;
-  position: absolute;
+.info_table {
+  width: 325px;
   border: 2px solid #9b9b9b;
-  top: 150px;
-  right: 0;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   white-space: nowrap;
+}
+
+#legend {
+  height: 160px;
+  position: absolute;
+  top: 154px;
+  right: 8px;
+}
+
+#pattern_table {
+  height: 205px;
+  position: absolute;
+  top: 334px;
+  right: 8px;
+}
+
+.title {
+  position: relative;
+  width: 325px;
+  height: 20px;
+  text-align: center;
+  padding-top: 5px;
+  font-family: inherit;
+  font-weight: bold;
+  color: #5e5d5d;
+  padding-bottom: 5px;
+  background-color: #c5c5c5;
+  border-bottom: 1px solid #9b9b9b;
 }
 
 .info_legend_cell {
   position: relative;
-  display: table-row;
-  padding: 50px;
+  width: 325px;
   height: 40px;
 }
+
+.info_pattern_cell {
+  position: relative;
+  width: 325px;
+  height: 40px;
+  border-bottom: 1px solid #9b9b9b;
+}
+
 .info_label {
   font-family: inherit;
   font-weight: lighter;
   color: #5e5d5d;
   top: 10px;
-  padding-left: 10px;
+  padding-left: 12px;
   position: relative;
   display: inline-block;
 }
 
 .info_square {
-  alignment: right;
+  alignment: center;
   width: 15px;
   height: 15px;
-  top: 10px;
+  top: 9px;
   left: 5px;
   border: 2px solid #9b9b9b;
   position: relative;

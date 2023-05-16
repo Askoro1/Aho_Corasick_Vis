@@ -39,6 +39,16 @@
   color: #9b9b9b;
 }
 
+.counter {
+  position: absolute;
+  display: block;
+  alignment: right;
+  right: 220px;
+  font-size: 0.75rem;
+  font-weight: 450;
+  color: #9b9b9b;
+}
+
 .field:focus ~ .label {
   position: absolute;
   top: 0;
@@ -46,6 +56,7 @@
   transition: 0.2s;
   font-size: 1rem;
 }
+
 
 /* reset input */
 .field:required, .field:invalid {
@@ -62,3 +73,11 @@
   left: 460px;
   width: 35%;
 }
+
+#highlighted_pattern_field::selection {
+  background-color: rgba(255, 0, 0, 0.3);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  user-select: none;
+}
+

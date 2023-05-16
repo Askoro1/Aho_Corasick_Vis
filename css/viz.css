@@ -1,0 +1,41 @@
+.svg_trie {
+  border: 3px solid rgb(174, 176, 178);
+}
+
+.arrow_link {
+  stroke: rgba(50, 50, 50, 0.2);
+  stroke-width: 2;
+  marker-end: url(#arrowhead);
+}
+
+.reg_node {
+  fill: rgb(178, 178, 178);
+  stroke: #6e6b6b;
+  stroke-width: 2px;
+}
+
+.highlighted_node {
+  fill: rgb(178, 178, 178);
+  stroke: #5a95b9;
+  stroke-width: 2px;
+  filter: drop-shadow( 0 0 1.2rem rgb(0, 72, 255));
+  animation: glow 0.5s linear infinite alternate;
+}
+
+@keyframes glow{
+  to {
+    filter: drop-shadow( 0 0 0.75rem rgb(94, 0, 255));
+  }
+}
+
+.terminal_node {
+  fill: rgb(232, 152, 152);
+  stroke: #9f2a2a;
+  stroke-width: 2px;
+}
+
+.graph_text {
+  font-size: 1.1rem;
+  font-weight: 300;
+  font-palette: light;
+}

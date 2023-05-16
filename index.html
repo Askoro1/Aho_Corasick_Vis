@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="css/tables.css">
   <link rel="stylesheet" href="css/text_fields.css">
   <link rel="stylesheet" href="css/text_box.css">
+  <link rel="stylesheet" href="css/viz.css">
   <meta name="theme-color" content="#fafafa">
 </head><!-- HTML !-->
 
@@ -41,10 +42,11 @@
         <label for="text_field" class="label">Input text for analysis</label>
     </div>
     <div class="text_field" id="pattern_input">
-      <input class="field" placeholder="Pattern" id="pattern_field" required />
+      <input class="field" placeholder="Pattern" id="pattern_field" required maxlength="20" />
       <label for="pattern_field" class="label">Input pattern</label>
+      <label for="pattern_field" class="counter"></label>
     </div>
-    <button class="button" id="add_button"><i class="fa fa-plus" style="color: #706f6f"></i></button>
+    <button class="button" id="add_button" onclick="aho_corasick.addNewPattern()"><i class="fa fa-plus" style="color: #706f6f"></i></button>
     <button class="button" id="start_button"><i class="fa fa-caret-right" style="color: #499b54; scale : 1.5"></i></button>
     <button class="button" id="stop_button"><i class="fa fa-solid fa-square" style="color: #c65450; scale : 0.9"></i></button>
   </div>
@@ -54,27 +56,43 @@
     </div>
   </div>
   <div class="graph_space">
-
+    <svg class="svg_trie" id="trie"></svg>
   </div>
 
-  <div class="info_legend">
+  <div class="info_table" id="legend">
+    <div class="title">Legend</div>
     <div class="info_legend_cell">
-      <div class="info_label">1</div>
       <div class="info_square" style="background-color: #c65450"></div>
+      <div class="info_label">Node</div>
     </div>
     <div class="info_legend_cell">
-      <div class="info_label">2</div>
       <div class="info_square" style="background-color: #499b54"></div>
+      <div class="info_label">Link</div>
     </div>
     <div class="info_legend_cell">
-      <div class="info_label">3</div>
       <div class="info_square" style="background-color: #6daec7"></div>
+      <div class="info_label">Terminal node</div>
     </div>
     <div class="info_legend_cell">
-      <div class="info_label">longlonglonglonglonglonglongnameofflag</div>
       <div class="info_square"><i class="fa fa-solid fa-flag" style="color: #c65450; scale : 0.9"></i></div>
+      <div class="info_label">Current node</div>
     </div>
   </div>
+
+  <div class="info_table" id="pattern_table">
+    <div class="title">Patterns</div>
+    <div class="info_pattern_cell">
+    </div>
+    <div class="info_pattern_cell">
+    </div>
+    <div class="info_pattern_cell">
+    </div>
+    <div class="info_pattern_cell">
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.6.1/randomColor.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/button_counters.js"></script>
   <script src="js/main.js"></script>
 </body>
 
