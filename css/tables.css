@@ -8,14 +8,14 @@
   height: 160px;
   position: absolute;
   top: 154px;
-  right: 8px;
+  left: 925px;
 }
 
 #pattern_table {
   height: 205px;
   position: absolute;
   top: 334px;
-  right: 8px;
+  left: 925px;
   overflow-y: auto;
   overflow-x: hidden;
 }
