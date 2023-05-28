@@ -30,8 +30,8 @@
   background-color: rgb(170, 170, 173);
 }
 
-#menu_button {
-  top: 0;
+.button:disabled {
+  background-color: rgb(206, 206, 208);
 }
 
 #add_button {
@@ -42,7 +42,7 @@
   width: 60px;
 }
 
-#start_button {
+#run_button {
   top: 25px;
   left: 800px;
   height: 55px;

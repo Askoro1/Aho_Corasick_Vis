@@ -2,15 +2,66 @@
   border: 3px solid rgb(174, 176, 178);
 }
 
-.arrow_link {
+.reg_link {
   stroke: rgba(50, 50, 50, 0.2);
-  stroke-width: 2;
-  marker-end: url(#arrowhead);
+  stroke-width: 1.5;
+  fill: none;
+  marker-end: url(#arrowhead_r);
+}
+
+.suffix_link {
+  stroke: rgba(252, 139, 0, 0.68);
+  stroke-width: 1.5;
+  fill: none;
+  marker-end: url(#arrowhead_s);
+}
+
+.terminal_link {
+  stroke: rgba(0, 40, 241, 0.3);
+  stroke-width: 1.5;
+  fill: none;
+  marker-end: url(#arrowhead_t);
+}
+
+.highlighted_link_path {
+  stroke: rgba(252, 59, 0, 0.74);
+  stroke-width: 1.5;
+  fill: none;
+  animation: draw linear forwards;
+  animation-duration: 2s;
+}
+
+.highlighted_suffix_link_path {
+  stroke: rgba(252, 139, 0, 0.74);
+  stroke-width: 1.5;
+  fill: none;
+  animation: draw linear forwards;
+  animation-duration: 2s;
+}
+
+.highlighted_terminal_link_path {
+  stroke: rgba(0, 40, 241, 0.74);
+  stroke-width: 1.5;
+  fill: none;
+  animation: draw linear forwards;
+  animation-duration: 2s;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 .reg_node {
   fill: rgb(178, 178, 178);
   stroke: #6e6b6b;
+  stroke-width: 2px;
+}
+
+.terminal_node {
+  fill: rgb(232, 152, 152);
+  stroke: #9f2a2a;
   stroke-width: 2px;
 }
 
@@ -22,16 +73,10 @@
   animation: glow 0.5s linear infinite alternate;
 }
 
-@keyframes glow{
+@keyframes glow {
   to {
     filter: drop-shadow( 0 0 0.75rem rgb(94, 0, 255));
   }
-}
-
-.terminal_node {
-  fill: rgb(232, 152, 152);
-  stroke: #9f2a2a;
-  stroke-width: 2px;
 }
 
 .graph_text {

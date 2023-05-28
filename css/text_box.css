@@ -1,18 +1,38 @@
 .text_box {
   position: relative;
   font-family: inherit;
-  width: 1150px;
+  width: 1200px;
   height: 40px;
-  border: 2px solid #5e5d5d;
+  top: 500px;
+  left: 30px;
+  border: 2px solid #9b9b9b;
   outline: 0;
   font-size: 1.2rem;
   font-weight: 600;
   color: rgb(150, 150, 150);
   padding: 7px 10px;
   background: transparent;
-  top: 500px;
-  left: 60px;
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-behavior: initial;
+}
+
+.highlighted_field_passed {
+  background-color: rgba(255, 0, 0, 0.4);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  user-select: none;
+}
+
+.highlighted_field_curr {
+  background-color: rgba(2, 182, 34, 0.56);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  user-select: none;
+}
+
+@keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
 }

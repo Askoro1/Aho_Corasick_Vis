@@ -1,12 +1,10 @@
 .info_table {
   width: 325px;
   border: 2px solid #9b9b9b;
-  overflow-y: auto;
-  overflow-x: hidden;
   white-space: nowrap;
 }
 
-#legend {
+#log_table {
   height: 160px;
   position: absolute;
   top: 154px;
@@ -18,6 +16,8 @@
   position: absolute;
   top: 334px;
   right: 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .title {
@@ -34,10 +34,29 @@
   border-bottom: 1px solid #9b9b9b;
 }
 
-.info_legend_cell {
+.log {
+  height: 130px;
+  width: 325px;
+  position: relative;
+  white-space: nowrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.info_log_cell {
   position: relative;
   width: 325px;
-  height: 40px;
+  height: 30px;
+  flex-shrink: 0;
+  border-top: 1px solid #9b9b9b;
+  font-family: inherit;
+  font-weight: lighter;
+  color: #5e5d5d;
+  padding-left: 10px;
+  padding-top: 15px;
 }
 
 .info_pattern_cell {
@@ -67,4 +86,32 @@
   position: relative;
   display: inline-block;
   vertical-align: middle;
+}
+
+.stack_like {
+  height: 200px;
+  width: 60px;
+  position: absolute;
+  top: 355px;
+  left: 30px;
+  border: 2px solid #9b9b9b;
+  background-color: rgba(189, 188, 188, 0.3);
+  white-space: nowrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.stack_like_cell {
+  flex-shrink: 0;
+  position: relative;
+  width: 60px;
+  height: 40px;
+  border-top: 1px solid #9b9b9b;
+  font-family: inherit;
+  font-weight: lighter;
+  color: #5e5d5d;
+  padding-left: 20px;
 }

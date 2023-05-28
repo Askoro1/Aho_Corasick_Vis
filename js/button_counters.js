@@ -6,12 +6,10 @@ input.onfocus = function (e) {
 };
 
 input.addEventListener ('keydown', function (e) {
-  console.log(input.maxLength);
   counter.textContent = String(input.maxLength - input.value.length);
 });
 
 input.addEventListener ('keyup', function (e) {
-  console.log(input.maxLength);
   counter.textContent = String(input.maxLength - input.value.length);
 });
 
