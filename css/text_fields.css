@@ -1,12 +1,11 @@
 .text_field {
   position: absolute;
   padding: 15px 0 0;
-  width: 50%;
 }
 
 .field {
   font-family: inherit;
-  width: 50%;
+  width: 75%;
   border: 0;
   border-bottom: 2px solid #9b9b9b;
   border-image: linear-gradient(to right, #5e5d5d, #9b9b9b);
@@ -37,13 +36,14 @@
   font-size: 1rem;
   font-weight: 550;
   color: #9b9b9b;
+  white-space: nowrap;
 }
 
 .counter {
   position: absolute;
   display: block;
   alignment: right;
-  right: 220px;
+  right: 25%;
   font-size: 0.75rem;
   font-weight: 450;
   color: #9b9b9b;
@@ -66,12 +66,13 @@
 #text_input {
   top: 20px;
   left: 60px;
+  width: 400px;
 }
 
 #pattern_input {
   top: 20px;
   left: 460px;
-  width: 35%;
+  width: 300px;
 }
 
 #highlighted_pattern_field::selection {
