@@ -262,20 +262,18 @@ textarea {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   background-color: #F5F5F5;
-}
-
-header {
-  display: inline-flex;
-  flex-direction: row;
-}
-
-body {
   font: 1em Poppins, sans-serif;
 }
 
+header {
+  alignment: center;
+}
+
 header p {
-  transform: translateX(300%);
   text-align: center;
   font-family: Poppins, sans-serif;
   font-weight: bold;
